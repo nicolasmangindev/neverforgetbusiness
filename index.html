@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NeverForget — Simple Reminder SaaS</title>
+  <meta name="description" content="NeverForget is a simple web-based reminder service with Free and Premium plans." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="logo">N</div>
+      <div>
+        <h1>NeverForget</h1>
+        <p class="tagline">Simple reminders. No hassle.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Support</a>
+      <a href="#policies">Policies</a>
+      <a href="#legal">Legal</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Business name + descriptions of services -->
+    <section id="about" class="container hero">
+      <h2>What we do</h2>
+      <p>
+        <strong>NeverForget</strong> is a cloud-based reminder application. Users can create and manage personal reminders and receive notifications by email and push. 
+        We offer a <strong>Free</strong> plan (limited reminders, email notifications) and a <strong>Premium</strong> subscription (unlimited reminders, additional channels, advanced scheduling).
+      </p>
+      <p class="muted">
+        Service type: Software as a Service (SaaS), delivered instantly online after signup. No physical goods are sold.
+      </p>
+    </section>
+
+    <!-- Customer support contact details -->
+    <section id="contact" class="container card">
+      <h2>Customer support</h2>
+      <ul class="list">
+        <li><strong>Email:</strong> <a href="mailto:nicolas.mangin.dev@gmail.com">nicolas.mangin.dev@gmail.com</a></li>
+        <li><strong>Contact form:</strong> <a href="https://forms.gle/">Submit a request</a></li>
+        <li><strong>Registered business name:</strong> <span>Nutrae Soltuons</span></li>
+        <li><strong>Business address:</strong> <span>881 cours de gray, 21850; Saint-Apollinaire, France</span></li>
+      </ul>
+      <p class="muted">We aim to respond within 2 business days.</p>
+    </section>
+
+    <!-- Refund / Dispute / Cancellation policies -->
+    <section id="policies" class="container grid">
+      <div class="card">
+        <h3>Refund & dispute policy</h3>
+        <p>
+          NeverForget is a subscription-based digital service. You can cancel at any time (see Cancellation Policy).
+          If you believe you were charged in error, contact us at <a href="mailto:nicolas.mangin.dev@gmail.com">nicolas.mangin.dev@gmail.com</a>.
+          Refunds are assessed case-by-case and processed in accordance with applicable consumer protection laws and payment network rules.
+        </p>
+        <p class="muted">
+          For EU consumers: you may have statutory rights including a right of withdrawal for certain online purchases—some exceptions apply for
+          fully delivered digital services. Contact us if you have questions about your specific case.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cancellation policy</h3>
+        <p>
+          You may cancel your Premium subscription at any time from the account page. Cancellation stops future renewals.
+          Your access remains active until the end of the current billing period. No further charges will be made after cancellation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Return policy</h3>
+        <p>
+          We do not sell physical goods. As such, there is no product return process. For billing issues, see the Refund & dispute policy above.
+        </p>
+      </div>
+    </section>
+
+    <!-- Legal / export / compliance -->
+    <section id="legal" class="container card">
+      <h2>Legal & export</h2>
+      <p>
+        NeverForget provides reminder software for general productivity use. The service is not designed for controlled or
+        sanctioned uses. Users are responsible for complying with local laws and regulations. We do not knowingly provide access
+        in jurisdictions subject to comprehensive sanctions where our services are restricted.
+      </p>
+      <p class="muted">
+        © <span id="year"></span> <span>Nutrae Solutions</span>. All rights reserved.
+        <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a>
+      </p>
+    </section>
+
+    <!-- Optional lightweight Terms/Privacy placeholders -->
+    <section id="terms" class="container card">
+      <h2>Terms of Service (summary)</h2>
+      <ul class="list">
+        <li>Use NeverForget in compliance with the law and these terms.</li>
+        <li>Accounts may be suspended for abuse or fraud.</li>
+        <li>Premium subscriptions renew automatically until canceled.</li>
+      </ul>
+    </section>
+
+    <section id="privacy" class="container card">
+      <h2>Privacy (summary)</h2>
+      <ul class="list">
+        <li>We store account info and reminders to provide the service.</li>
+        <li>We never sell personal data. See full policy on request.</li>
+        <li>Contact <a href="mailto:nicolas.mangin.dev@gmail.com">nicolas.mangin.dev@gmail.com</a> for data requests.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>NeverForget · <span id="year2"></span></div>
+    <div><a href="#contact">Support</a> · <a href="#policies">Policies</a> · <a href="#legal">Legal</a></div>
+  </footer>
+
+  <script>
+    const y = new Date().getFullYear();
+    document.getElementById('year').textContent = y;
+    document.getElementById('year2').textContent = y;
+  </script>
+</body>
+</html>
